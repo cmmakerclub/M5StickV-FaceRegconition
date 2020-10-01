@@ -24,6 +24,7 @@ task = kpu.load("/sd/model.kmodel")
 # Create Class name
 classes = ['man', 'tong']
 
+# Create rectangle on screen
 anchor = (1.889, 2.5245, 2.9465, 3.94056, 3.99987, 5.3658, 5.155437, 6.92275, 6.718375, 9.01025)
 
 a = kpu.init_yolo2(task, 0.5, 0.3, 5, anchor)
